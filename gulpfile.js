@@ -3,14 +3,20 @@ const sass = require('gulp-sass')(require('sass'));
 const cleanCSS = require('gulp-clean-css');
 
 function styles(){
-    return gulp.src('./src/styles/*.scss')
-    .pipe(sass()) // compila normal
-    .pipe(cleanCSS()) // comprime aqui
+    return gulp.src('./src/styles/main.scss')
+    .pipe(sass())
+    .pipe(cleanCSS())
     .pipe(gulp.dest('./dist/css'));
 }
 
-exports.default = styles;
+function images(){
+    return gulp.src('./src/images/**/*.*')
+    .pipe(gulp.dest('./dist/images'));
+}
+
+exports.default = gulp.parallel(styles, images);
 
 exports.watch = function(){
-    gulp.watch('./src/styles/*.scss', gulp.parallel(styles))
+    gulp.watch('./src/styles/**/*.scss', gulp.parallel(styles));
+    gulp.watch('./src/images/**/*.*', gulp.parallel(images));
 }
