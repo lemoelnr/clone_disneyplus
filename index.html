@@ -7,11 +7,26 @@
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/disneyplus.svg" alt="">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="#" class="button button--secondary">Assine agora</a>
+                </li>
+                <li class="header__links__item">
+                    <a href="#" class="button button--dark">Entrar</a>
+                </li>
+            </ul>
+        </div>
+    </header>
     <section class="hero">
         <div class="hero__content">
-            <h1 class="hero__content__branding">
+            <div class="hero__content__branding">
                 <img src="./src/images/disneyplus.svg" alt="Disney+">
-            </h1>
+            </div>
 
             <h3 class="title--small">
                 As melhores histórias em sua lugar.
@@ -44,10 +59,10 @@
             </p>
         </div>
     </section>
-
     <section class="shows">
         <nav class="shows__tabs">
-            <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">
+            <button data-tab-button="em_breve" 
+            class="shows__tabs__button shows__tabs__button--is-active">
                 Em breve
             </button>
             <button data-tab-button="populares" class="shows__tabs__button">
@@ -58,7 +73,6 @@
             </button>
         </nav>
     </section>
-
     <section class="shows">
         <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
             <li class="shows__list__item">
@@ -127,26 +141,30 @@
         <h2 class="text--big">Escolha seu Plano</h2>
             <ul class="plans__list">
                 <li class="plans__list__item">
-                    <img src="./dist/images/logos/disneyplus_underline.png" alt="">
+                    <img src="./dist/images/logos/disneyplus_underline.png" 
+                    alt="">
                     <strong class="title--small">R$ 27,90/mês*</strong>
-                    <p class="text--bigg">
-                        No Disney+ você encontra as últimas estreias do cinema originais e clássicos inesquecíveis.
+                    <p class="text--big">
+                        No Disney+ você encontra as últimas estreias do
+                        cinema origina e clássicos inesquecíveis.
                     </p>
                     <button class="button">Assine agora</button>
                 </li>
                 <li class="plans__list__item">
                     <img src="./dist/images/logos/disney_star_plus_sm.png" alt="">
                     <strong class="title--small">R$ 27,90/mês*</strong>
-                    <p class="text--bigg">
-                        No Disney+ você encontra as últimas estreias do cinema originais e clássicos inesquecíveis.
+                    <p class="text--big">
+                        No Disney+ você encontra as últimas estreias do cinema originais
+                         e clássicos inesquecíveis.
                     </p>
                     <button class="button">Assine agora</button>
                 </li>
                 <li class="plans__list__item">
                     <img src="./dist/images/logos/disney_star_plus_starzplay_underline.png" alt="">
                     <strong class="title--small">R$ 27,90/mês*</strong>
-                    <p class="text--bigg">
-                        No Disney+ você encontra as últimas estreias do cinema originais e clássicos inesquecíveis.
+                    <p class="text--">
+                        No Disney+ você encontra as últimas estreias do cinema originais 
+                        e clássicos inesquecíveis.
                     </p>
                     <button class="button">Assine agora</button>
                 </li>                                
@@ -155,6 +173,139 @@
                 *O preço pode variar caso a assinatura seja feita através de outras plataformas.
             </p>
     </section>
+    <section class="image-text-section">
+        <img src="./dist/images/tv_pc_tablet_celular.png" alt="">
+        <div class="image-text-section__text__container">
+            <h2 class="title">Assista do seu jeito 1</h2>
+            <p class="text--big"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Nesciunt assumenda natus unde quam rem libero 
+                voluptates beatae commodi eveniet,</p>
+        </div>
+    </section>
+    <section class="image-text-section image-text-section--imagem-full-width">
+        <img src="./dist/images/fundo_rei_leao.png" alt="">
+        <div class="image-text-section__text__container image-text-section--imagem-full-width__text__container">
+            <h2 class="title">Assista do seu jeito 2</h2>
+            <p class="text--bigg"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt assumenda natus unde quam rem libero 
+                voluptates beatae commodi eveniet,</p>
+        </div>
+    </section>
+    <section class="available-devices">
+        <h2 class="title">Disponível nos seus dispotivos favoritos</h2>
+        <ul class="available-devices__list">
+            <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/computador.png" alt="">
+                <h4 class="title--small">Computador</h4>
+                <ul class="text">
+                    <li>Chrome OS</li>
+                    <li>MacOS</li>
+                    <li>PC Windows</li>
+                </ul>   
+            </li>
+            <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/celular.png" alt="">
+                <h4 class="title--small">Computador</h4>
+                <ul class="text">
+                    <li>Chrome OS</li>
+                    <li>MacOS</li>
+                    <li>PC Windows</li>
+                </ul>   
+            </li>
+            <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/tv.png" alt="">
+                <h4 class="title--small">Computador</h4>
+                <ul class="text">
+                    <li>Chrome OS</li>
+                    <li>MacOS</li>
+                    <li>PC Windows</li>
+                </ul>   
+            </li>
+            <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/videogames.png">
+                <h4 class="title--small">Computador</h4>
+                <ul class="text">
+                    <li>Chrome OS</li>
+                    <li>MacOS</li>
+                    <li>PC Windows</li>
+                </ul>   
+            </li>          
+        </ul>
+    </section>
+    <section class="faq">
+        <h2 class="title">Perguntas Frequentes</h2>
+        <ul class="faq__questions">
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Pergunta?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    A reposta da Pergunta
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Pergunta?
+                </div>
+                <div class="faq__questions__item__answer text--bigg">
+                    A reposta da Pergunta
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Pergunta?
+                </div>
+                <div class="faq__questions__item__answer text--bigg">
+                    A reposta da Pergunta
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="linguage-selector">
+                        <img src="./dist/images/icones/globe.svg" alt="">
+                        <select>
+                            <option>English</option>
+                            <option selected>Português</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--smal">Termos de condições de uso</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--smal">Política de privacidade</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--smal">Proteção de dados no Brasil</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--smal">Anúncios personalizados</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--smal">Disposítivos compatíveis</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--smal">Ajuda</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--smal">Sobre o Disney+</a>
+                </li>
+            </ul>
+            <p class="text--smal">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Reprehenderit dignissimos ad non, perspiciatis aliquid Lorem 
+                ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit
+                dignissimos ad non, perspiciatis aliquid Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit dignissimos ad non, perspiciatis aliquid  
+            </p>
+            <p class="text--smal">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit 
+            </p>
+        </div>
+    </footer>
     <script src="./src/main.js"></script>
 </body>
 </html>
